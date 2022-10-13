@@ -33,7 +33,7 @@ nav {
     height: 75px;
     display: flex;
     background-color: #8026ff;
-    padding: 50px 100px;
+    padding: 50px 7.55vw;
     align-items: center;
     justify-content: space-between;
     color: white;
@@ -51,7 +51,7 @@ nav {
     font-weight: bold;
     color: white;
     font-size: 35px;
-    width: 175px;
+    width: 13.3vw;
 }
 
 .nav-left img {
@@ -70,8 +70,8 @@ nav {
 }
 
 .nav-mid div {
-    margin: 0 40px;
-    font-size: 25px;
+    margin: 0 30px;
+    font-size: 1.9vw;
 }
 
 .btn {
@@ -88,13 +88,17 @@ nav {
 .heropage {
     display: flex;
     background-color: #8026ff;
-    height: 90vh;
+    height: 85vh;
+    align-items: center;
     border-bottom-right-radius: 175px;
 }
 
-.heropage-left,
+.heropage-left {
+    width: 55%;
+}
+
 .heropage-right {
-    width: 50%;
+    width: 45%;
 
 }
 
@@ -105,16 +109,19 @@ nav {
 }
 
 .heropage-left-content-wrapper {
-    margin-left: 100px;
-    margin-top: 160px;
+    /* margin-left: 100px; */
+    margin-left: 7.55vw;
+    /* margin-top: 160px; */
+    margin-top: 14.5vw;
 }
 
 .heropage-left .heropage-text-wrapper ul {
     list-style: none;
     position: relative;
     left: 12px;
-    height: 33px;
-    font-size: 45px;
+    height: 51px;
+    /* font-size: 9.164959vh; */
+    /* font-size: 3.62vw; */
     margin: 10px 0 0 -10px;
     overflow: hidden;
 }
@@ -123,8 +130,15 @@ nav {
     margin-left: 20px;
 }
 
+.herologo-wrapper img {
+    width: 90%;
+    max-width: 500px;
+}
+
 .heropage-text-wrapper {
-    font-size: 40px;
+    font-size: 8.14664vh;
+    /* font-size: 3.25vw; */
+    font-size: 4vw;
     font-weight: inherit;
 }
 
@@ -155,9 +169,9 @@ nav {
 
 .heropage-dynamic-text li {
     position: relative;
-    top: 0;
+    top: 2px;
     animation: slide 3.4s steps(2) infinite;
-
+    margin-bottom: 24px;
 }
 
 @keyframes slide {
@@ -196,18 +210,20 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     width: inherit;
-    margin: 0 50px;
     flex-wrap: wrap;
 }
 
 .program-container-box {
-    width: min-content;
     background-color: white;
-    box-shadow: black;
-    border-radius: 16px;
+    width: 30%;
+    border-radius: 20px;
     box-shadow: 10px 10px 10px 5px #d7d3cb;
     margin: 30px 15px;
 
+}
+
+.program-container-box-img-wrapper img {
+    width: 100%;
 }
 
 .program-container-box-text-wrapper-inside {
@@ -239,15 +255,16 @@ nav {
 .footer-top h1,
 .footer-top p {
     font-family: 'Montserrat', sans-serif;
-    line-height: 28.8px;
+    line-height: 2.173vw;
     letter-spacing: 0.2px;
-    font-size: 16px;
+    font-size: 1.21vw;
 }
 
 .footer-top-inside {
-    width: 1140px;
+    /* width: 1140px; */
+    max-width: 1140px;
     display: flex;
-    padding: 0 94px;
+    padding: 0 7.17vw;
 }
 
 .footer-top-inside-container {
@@ -259,12 +276,8 @@ nav {
 .footer-top-inside-container h1 {
     margin-bottom: 20px;
     text-align: center;
-    font-size: 30px;
+    font-size: 2.263vw;
     line-height: 1;
-}
-
-.footer-top-inside-container p {
-    margin: 0 0 20px;
 }
 
 .footer-bottom {
@@ -281,8 +294,8 @@ nav {
 }
 
 .footer-top-inside-container i {
-    font-size: 48px;
-    margin: 0 10px;
+    font-size: 3.85vw;
+    margin: 0 0.754vw;
     color: white;
 }
 
@@ -304,8 +317,11 @@ nav {
 
 .testimonial-container {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    gap: 1em;
 }
 
 .testimonial {
@@ -313,7 +329,7 @@ nav {
 }
 
 .testimonial a img {
-    width: -webkit-fill-available;
+    width: 100%;
 }
 
 /* for making a top up button */
@@ -348,7 +364,7 @@ nav {
 
 /* This is for the benefits section */
 #benefits {
-    margin: 10 0px;
+    margin: 10px 0px;
 
 }
 
@@ -357,9 +373,7 @@ nav {
 .benefit-professtional {
     display: flex;
     justify-self: center;
-    align-items: center;
     width: 100%;
-    height: 100vh;
 }
 
 .benefit-student {
@@ -376,6 +390,7 @@ nav {
 
 .benefit-left {
     width: 50%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -385,44 +400,70 @@ nav {
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     height: 100%;
 }
 
 .benefit-right-imgwrapper {
     height: 100%;
-    width: 75%;
+    width: 77%;
+    align-items: end;
+    display: flex;
 }
 
 .benefit-right img {
-    height: 100%;
-    width: -webkit-fill-available;
+    width: inherit;
+    max-width: 360px;
+}
+
+.benefit-left-textwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .benefit-left-textwrapper h1 {
-    font-size: 100px;
+    font-size: 7.55vw;
     font-family: 'Gilroy-Bold', sans-serif;
     letter-spacing: -3.15px;
-    line-height: 96px;
+    line-height: 7.24vw;
     white-space: pre-line;
     opacity: 0.9;
 }
 
 .benefit-left-textwrapper h2 {
-    font-size: 32px;
+    font-size: 2.414vw;
     font-family: 'Gilroy-Bold', sans-serif;
     letter-spacing: -0.2px;
-    line-height: 38px;
+    line-height: 2.865vw;
     white-space: pre-line;
     max-width: 630px;
     margin-top: 16px;
 }
 
 .benefit-left-textwrapper p {
-    font-size: 18px;
+    font-size: 1.33vw;
     font-family: 'Gilroy-Medium', sans-serif;
     letter-spacing: 0px;
-    line-height: 28px;
+    line-height: 2.1116vw;
     max-width: 630px;
-    margin-bottom: 40px;
+}
+
+/* All the media  queries starts from here */
+@media (max-width:1120px) {
+    .herologo-wrapper {
+        margin-left: 0;
+    }
+}
+
+@media (max-width:900px) {
+    .program-container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .program-container-box {
+        width: 90%;
+    }
 }
