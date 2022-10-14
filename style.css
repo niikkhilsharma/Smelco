@@ -208,6 +208,10 @@ nav {
     width: inherit;
 }
 
+.program-heading {
+    padding: 25px 0;
+}
+
 /* .program-heading{
     background-image: url(./curve.png);
 } */
@@ -224,8 +228,6 @@ nav {
     width: 30%;
     border-radius: 20px;
     box-shadow: 10px 10px 10px 5px #d7d3cb;
-    margin: 30px 0;
-
 }
 
 .program-container-box-img-wrapper img {
@@ -317,7 +319,7 @@ nav {
 
 /* This is for the testimonials */
 .testimonial-heading {
-    margin: 20px 0;
+    padding: 25px 0;
     text-align: center;
 }
 
@@ -363,6 +365,10 @@ nav {
 }
 
 /* this is for the curve lines below the headers */
+.curve-line-container {
+    height: 22px;
+}
+
 .curve {
     margin-top: -30px;
     width: 165px;
@@ -488,6 +494,16 @@ nav {
     .heropage-text-wrapper {
         font-size: 6.55vh;
     }
+
+    .heropage-left {
+        width: auto;
+    }
+
+    .heropage-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width:600px) {
@@ -510,11 +526,8 @@ nav {
     .heropage-left {
         width: auto;
     }
-}
 
-.heropage-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .heropage-static-text {
+        text-align: center;
+    }
 }
